@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard - Invest Tracker</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <h2>Welcome</h2>
+    <p>Select an action:</p>
+    <!--navigation links for the dashboard-->
+
+    <ul>
+        <li><a href="{{ url_for('investment_form') }}">➕ Add Investment</a></li>
+        <li><a href="{{ url_for('investment_list') }}">📊 View Investments</a></li>
+        <li><a href="{{ url_for('logout') }}">🚪 Logout</a></li>
+    </ul>
+    <p>Need help? <a href="{{ url_for('help') }}">Contact Support</a></p>
+</body>
+</html>
